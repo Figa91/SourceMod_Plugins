@@ -1,0 +1,211 @@
+//<-- светло-зелёный цвет
+//<-- зелёный цвет
+//<-- белый цвет
+//<-- оранжевый цвет
+//<-- синий цвет
+"Phrases"
+{
+	"DIFFICULTY_MSG_TITLE"
+	{
+		"en"		"**********DIFFICULTY**********"
+		"ru"		"***********СЛОЖНОСТЬ**********"
+		"es"		"**********DIFFICULTY**********"
+	}
+	"DIFFICULTY_MSG_LEVEL"
+	{
+		"#format"	"{1:d}" // g_NumOfPlayers
+		"en"		"Difficulty level: ({1}/6)."
+		"ru"		"Уровень сложности: ({1}/6)."
+	}
+	"DIFFICULTY_MSG_1"
+	{
+		"#format"	"{1:d},{2:d}" // g_CountPlayers, z_health
+		"en"		"Player(s): {1}, Zombie: {2} hp."
+		"ru"		"Игроков: {1}, Зомби: {2} хп."
+	}
+	"DIFFICULTY_MSG_3"
+	{
+		"#format"	"{1:d},{2:d}" // z_hunter_health, z_gas_health
+		"en"		"Hunter: {1} hp, Smoker: {2} hp."
+		"ru"		"Охотник: {1} хп, Курильщик : {2} хп."
+	}
+	"DIFFICULTY_MSG_4"
+	{
+		"#format"	"{1:d},{2:d}" // z_exploding_health, z_witch_health
+		"en"		"Boomer: {1} hp, Witch: {2} hp."
+		"ru"		"Толстяк: {1} хп, Ведьма: {2} хп."
+	}
+	"DIFFICULTY_MSG_5"
+	{
+		"#format"	"{1:d},{2:d}" // mt_count_regular_coop, mt_health_regular_coop
+		"en"		"Tank: {1} with {2} hp."
+		"ru"		"Танк: по {1} с {2} хп."
+	}
+	"DIFFICULTY_MSG_END"
+	{
+		"en"		"******************************"
+		"ru"		"********************************"
+		"es"		"******************************"
+	}
+	"DIFFICULTY_MSG_CHANGEDIFTITLE"
+	{
+		"en"		"Change the difficulty?"
+		"ru"		"Изменить сложность?"
+		"es"		"Cambiar la dificultad?"
+	}
+	"DIFFICULTY_MSG_SELECTDIFTITLE"
+	{
+		"#format"	"{1:d}" 
+		"en"		"Current level:{1} Change?"
+		"ru"		"Текущий уровень:{1} Изменить?"
+		"es"		"Nivel actual:{1} Cambiar?"
+	}
+	"DIFFICULTY_MSG_UPDIF"
+	{
+		"en"		"Up difficulty"
+		"ru"		"Увеличить сложность"
+		"es"		"Ampliar dificultad"
+	}
+	"DIFFICULTY_MSG_DOWNDIF"
+	{
+		"en"		"Down difficulty"
+		"ru"		"Уменьшить сложность"
+		"es"		"Reducir dificultad"
+	}
+	"DIFFICULTY_MSG_CONSTDIF"
+	{
+		"en"		"Do't change ✘"
+		"ru"		"Не менять ✘"
+		"es"		"No cambie ✘"
+	}
+	"DIFFICULTY_MSG_VOTEALREADY"
+	{
+		"en"		"Voting has already started."
+		"ru"		"Голосование уже запущено."
+		"es"		"La votación ya ha comenzado."
+	}
+	"DIFFICULTY_MSG_VOTESTART"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} started the vote to change the difficulty."
+		"ru"		"{1} запустил голосование на изменение сложности."
+		"es"		"{1} comenzó el voto para cambiar la dificultad."
+	}
+	"DIFFICULTY_MSG_UP"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} wants to increase the difficulty."
+		"ru"		"{1} хочет увеличить сложность."
+		"es"		"{1} quiere aumentar la dificultad."
+	}
+	"DIFFICULTY_MSG_DOWN"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} wants to  reduce difficulty."
+		"ru"		"{1} хочет уменьшить сложность."
+		"es"		"{1} quiere  reducir dificultad."
+	}
+	"DIFFICULTY_MSG_CONST"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} does not want to change difficulty."
+		"ru"		"{1} хочет не менять сложность."
+		"es"		"{1} no quiere cambiar dificultad."
+	}
+	"DIFFICULTY_MSG_MOST_UP"
+	{
+		"#format"	"{1:d}"
+		"en"		"The majority voted for an increase in difficulty. Level ({1}/6)."
+		"ru"		"Большинство за увеличение сложности. Уровень ({1}/6)."
+		"es"		"La mayoría votó a favor de un aumento de la dificultad. Nivel ({1}/6)."
+	}
+	"DIFFICULTY_MSG_MOST_DOWN"
+	{
+		"#format"	"{1:d}"
+		"en"		"The majority voted for the reduction of difficulty. Level ({1}/6)."
+		"ru"		"Большинство за уменьшение сложности. Уровень ({1}/6)."
+		"es"		"La mayoría votó a favor de la reducción de la dificultad. Nivel ({1}/6)."
+	}
+	"DIFFICULTY_MSG_MOST_CONST"
+	{
+		"#format"	"{1:d}"
+		"en"		"Most against changes difficulty. Level ({1}/6)."
+		"ru"		"Большинство против изменения сложности. Уровень ({1}/6)."
+		"es"		"La mayor parte contra los cambios dificultad. Nivel ({1}/6)."
+	}
+	"DIFFICULTY_MSG_UP_END"
+	{
+		"en"		"Difficulty is increased."
+		"ru"		"Сложность увеличена."
+		"es"		"Se incrementa la dificultad."
+	}
+	"DIFFICULTY_MSG_DOWN_END"
+	{
+		"en"		"Difficulty is reduced."
+		"ru"		"Сложность уменьшена."
+		"es"		"La complejidad se reduce."
+	}
+	"DIFFICULTY_MSG_CONST_END"
+	{
+		"en"		"Difficulty is not changed."
+		"ru"		"Сложность не изменилась."
+		"es"		"Dificultad no se cambia."
+	}
+	"DIFFICULTY_MSG_GOD"
+	{
+		"#format"	"{1:d}"
+		"en"		"The maximum level of difficulty! Level ({1}/6)."
+		"ru"		"Установлен максимальный уровень сложности! Уровень ({1}/6)."
+		"es"		"El máximo nivel de dificultad! Nivel ({1}/6)."
+	}
+	"DIFFICULTY_MSG_NOOB"
+	{
+		"#format"	"{1:d}"
+		"en"		"Seriously ?! Much easier loser. Attain a minimum level of difficulty! Level ({1}/6)."
+		"ru"		"Серьёзно?! Установлен минимальный уровень сложности, нуб!=D Уровень ({1}/6)."
+		"es"		"¿En serio?! Perdedor Mucho más fácil. Alcanzar un nivel mínimo de dificultad! Nivel ({1}/6)."
+	}
+	"DIFFICULTY_MSG_RESULTS"
+	{
+		"en"		"Voting Results"
+		"ru"		"Итоги голосования"
+		"es"		"Resultados de los votos"
+	}
+	"DIFFICULTY_MSG_NOTHING"
+	{
+		"en"		"Nobody voted"
+		"ru"		"Никто не проголосовал"
+		"es"		"Nadie votó"
+	}
+	"DIFFICULTY_MSG_TIME"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"en"		"⇑Up:{1}  ⇓Down:{2}  ✘Do't change:{3}"
+		"ru"		"⇑Увеличить:{1}  ⇓Уменьшить:{2}  ✘Не менять:{3}"
+		"es"		"⇑Up:{1}  ⇓Down:{2}  ✘Do't change:{3}"
+	}
+	"DIFFICULTY_MSG_TIME_2"
+	{
+		"en"		"Until the end voting:"
+		"ru"		"До завершения голосования:"
+		"es"		"Hasta la votación final:"
+	}
+	"DIFFICULTY_MSG_TIME_3"
+	{
+		"en"		"sec."
+		"ru"		"сек."
+		"es"		"seg."
+	}
+	"DIFFICULTY_MSG_BLOCK"
+	{
+		"en"		"Believe me it is too easy for you!"
+		"ru"		"Поверь это слишком легко для тебя!"
+		"es"		"Créeme que es demasiado fácil para usted!"
+	}
+	"DIFFICULTY_MSG_TIMEOUT"
+	{
+		"en"		"Timeout voting, wait 1 minute."
+		"ru"		"Тайм-аут голосования, подождите 1 минуту."
+		"es"		"Tiempo de espera de la votación, espere 1 minuto."
+	}
+}
