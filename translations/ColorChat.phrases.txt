@@ -1,0 +1,23 @@
+"Phrases"
+{
+	"Spectate"
+	{
+		"en"		"[Spectate]"
+		"ru"		"[Зритель]"
+	}
+	"Survivor"
+	{
+		"en"		"[Survivor]"
+		"ru"		"[Выживший]"
+	}
+	"Infected"
+	{
+		"en"		"[Infected]"
+		"ru"		"[Заражённый]"
+	}
+	"Admin"
+	{
+		"en"		"[AdminSeeAll]"
+		"ru"		"[AdminSeeAll]"
+	}
+}
