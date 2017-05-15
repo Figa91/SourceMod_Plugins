@@ -18,7 +18,7 @@ bool g_votetype;
 
 Handle h_Timer;
 Handle h_Difficulty;
-Handle h_GameMode;
+//Handle h_GameMode;
 
 public Plugin myinfo = {
 	name = "AutoDifficulty",
@@ -47,7 +47,7 @@ public void OnPluginStart()
 	HookEvent("finale_win", Event_FinaleWin, EventHookMode_Pre);
 	
 	HookConVarChange(h_Difficulty, ConVarChange_GameDifficulty);
-	HookConVarChange(h_GameMode, ConVarChange_GameMode);
+	//HookConVarChange(h_GameMode, ConVarChange_GameMode);
 	
 	LoadTranslations("AutoDifficulty.phrases");
 }
@@ -875,7 +875,7 @@ public void ConVarChange_GameDifficulty(Handle convar, const char[] oldValue, co
 		}
 	}
 }
-public void ConVarChange_GameMode(Handle convar, const char[]oldValue, const char[]newValue)
+/*public void ConVarChange_GameMode(Handle convar, const char[]oldValue, const char[]newValue)
 {
 	if (strcmp(oldValue, newValue) != 0)
 	{
@@ -883,7 +883,7 @@ public void ConVarChange_GameMode(Handle convar, const char[]oldValue, const cha
 		GetConVarString(h_GameMode, s_GameMode, sizeof(s_GameMode));
 		if (strcmp(s_GameMode, "coop", false) != 0) SetConVarString(FindConVar("mp_gamemode"), "coop");
 	}
-}
+}*/
 void Count_TempLevelDiff()
 {
 	switch(i_NumOfPlayers)
