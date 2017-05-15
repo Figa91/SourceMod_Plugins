@@ -17,7 +17,7 @@ bool b_ExpertDifficulty;
 bool g_votetype;
 
 Handle h_Timer;
-Handle h_Difficulty;
+//Handle h_Difficulty;
 //Handle h_GameMode;
 
 public Plugin myinfo = {
@@ -46,7 +46,7 @@ public void OnPluginStart()
 	HookEvent("map_transition",  Event_MapTransition, EventHookMode_Pre);
 	HookEvent("finale_win", Event_FinaleWin, EventHookMode_Pre);
 	
-	HookConVarChange(h_Difficulty, ConVarChange_GameDifficulty);
+	//HookConVarChange(h_Difficulty, ConVarChange_GameDifficulty);
 	//HookConVarChange(h_GameMode, ConVarChange_GameMode);
 	
 	LoadTranslations("AutoDifficulty.phrases");
