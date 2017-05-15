@@ -39,7 +39,7 @@ public void OnPluginStart()
 	
 	h_Difficulty = FindConVar("z_difficulty");
 	h_GameMode = FindConVar("mp_gamemode");
-	SetConVarString(FindConVar("hostname"), "► SMS ᴿᵒᶪᵉˢ");
+	SetConVarString(FindConVar("hostname"), "L4D ghUB");
 	
 	//HookEvent("round_end",  Event_RoundEnd, EventHookMode_Pre);
 	HookEvent("mission_lost",  Event_RoundEnd, EventHookMode_Pre);
