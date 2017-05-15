@@ -17,8 +17,8 @@ bool b_ExpertDifficulty;
 bool g_votetype;
 
 Handle h_Timer;
-//Handle h_Difficulty;
-//Handle h_GameMode;
+Handle h_Difficulty;
+Handle h_GameMode;
 
 public Plugin myinfo = {
 	name = "AutoDifficulty",
@@ -37,17 +37,17 @@ public void OnPluginStart()
 	RegAdminCmd("sm_check", CheckDifficulty, ADMFLAG_ROOT);
 	RegAdminCmd("sm_info", AutoDifficultyInfo, ADMFLAG_RESERVATION);
 	
-	//h_Difficulty = FindConVar("z_difficulty");
-	//h_GameMode = FindConVar("mp_gamemode");
-	//SetConVarString(FindConVar("hostname"), "► SMS ᴿᵒᶪᵉˢ");
+	h_Difficulty = FindConVar("z_difficulty");
+	h_GameMode = FindConVar("mp_gamemode");
+	SetConVarString(FindConVar("hostname"), "► SMS ᴿᵒᶪᵉˢ");
 	
 	//HookEvent("round_end",  Event_RoundEnd, EventHookMode_Pre);
 	HookEvent("mission_lost",  Event_RoundEnd, EventHookMode_Pre);
 	HookEvent("map_transition",  Event_MapTransition, EventHookMode_Pre);
 	HookEvent("finale_win", Event_FinaleWin, EventHookMode_Pre);
 	
-	//HookConVarChange(h_Difficulty, ConVarChange_GameDifficulty);
-	//HookConVarChange(h_GameMode, ConVarChange_GameMode);
+	HookConVarChange(h_Difficulty, ConVarChange_GameDifficulty);
+	HookConVarChange(h_GameMode, ConVarChange_GameMode);
 	
 	LoadTranslations("AutoDifficulty.phrases");
 }
@@ -875,7 +875,7 @@ public void ConVarChange_GameDifficulty(Handle convar, const char[] oldValue, co
 		}
 	}
 }
-/*public void ConVarChange_GameMode(Handle convar, const char[]oldValue, const char[]newValue)
+public void ConVarChange_GameMode(Handle convar, const char[]oldValue, const char[]newValue)
 {
 	if (strcmp(oldValue, newValue) != 0)
 	{
@@ -883,7 +883,7 @@ public void ConVarChange_GameDifficulty(Handle convar, const char[] oldValue, co
 		GetConVarString(h_GameMode, s_GameMode, sizeof(s_GameMode));
 		if (strcmp(s_GameMode, "coop", false) != 0) SetConVarString(FindConVar("mp_gamemode"), "coop");
 	}
-}*/
+}
 void Count_TempLevelDiff()
 {
 	switch(i_NumOfPlayers)
