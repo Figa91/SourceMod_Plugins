@@ -37,9 +37,9 @@ public void OnPluginStart()
 	RegAdminCmd("sm_check", CheckDifficulty, ADMFLAG_ROOT);
 	RegAdminCmd("sm_info", AutoDifficultyInfo, ADMFLAG_RESERVATION);
 	
-	h_Difficulty = FindConVar("z_difficulty");
-	h_GameMode = FindConVar("mp_gamemode");
-	SetConVarString(FindConVar("hostname"), "► SMS ᴿᵒᶪᵉˢ");
+	//h_Difficulty = FindConVar("z_difficulty");
+	//h_GameMode = FindConVar("mp_gamemode");
+	//SetConVarString(FindConVar("hostname"), "► SMS ᴿᵒᶪᵉˢ");
 	
 	//HookEvent("round_end",  Event_RoundEnd, EventHookMode_Pre);
 	HookEvent("mission_lost",  Event_RoundEnd, EventHookMode_Pre);
