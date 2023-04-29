@@ -1,0 +1,32 @@
+//<-- светло-зелёный цвет
+//<-- зелёный цвет
+//<-- белый цвет
+//<-- оранжевый цвет
+"Phrases"
+{
+	"HaveHuntingRifle"
+	{
+		"en"		"Do you already have a Hunting Rifle, take other weapons."
+		"ru"		"У Вас уже есть винтовка, возьмите другое оружие."
+	}
+	"HaveRifle"
+	{
+		"en"		"Do you already have a M16, take other weapons."
+		"ru"		"У Вас уже есть М16, возьмите другое оружие."
+	}
+	"HaveSmg"
+	{
+		"en"		"Do you already have a SMG, take other weapons."
+		"ru"		"У Вас уже есть SMG, возьмите другое оружие."
+	}
+	"HavePumpshotgun"
+	{
+		"en"		"Do you already have a Pumpshotgun, take other weapons."
+		"ru"		"У Вас уже есть помповый дробавик, возьмите другое оружие."
+	}
+	"HaveAutoshotgun"
+	{
+		"en"		"Do you already have a Autoshotgun, take other weapons."
+		"ru"		"У Вас уже есть автоматический дробавик, возьмите другое оружие."
+	}
+}
